@@ -1,7 +1,7 @@
 # Test Task for Playkey
 
 Generated using [ngX-Rocket](https://github.com/ngx-rocket/generator-ngx-rocket).
-Also used a start kit: https://github.com/ngx-rocket/starter-kit
+Also used a [start kit](https://github.com/ngx-rocket/starter-kit).
 
 # Getting started
 
