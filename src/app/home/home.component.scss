@@ -1,0 +1,15 @@
+@import "src/theme/theme-variables";
+
+.wish-section {
+  max-width: 1160px;
+  margin: auto;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  @media(max-width: $md) {
+    flex-direction: column-reverse !important;
+    wish-list {
+      max-width: 320px;
+      margin: auto;
+    }
+  }
+}

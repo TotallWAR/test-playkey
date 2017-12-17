@@ -1,0 +1,53 @@
+@import "src/theme/theme-variables";
+
+$item-width: 200px;
+.product-list {
+  list-style-type: none;
+  padding: 0;
+  justify-content: space-evenly;
+  .added {
+    img {
+      filter: brightness(1) !important;
+    }
+  }
+  li {
+    > div {
+      cursor: pointer;
+      &:hover {
+        img {
+          filter: brightness(1);
+        }
+        span {
+          background-color: $gray-700;
+        }
+      }
+      img {
+        filter: brightness(0.7);
+        transition: all 0.5s ease;
+      }
+      span {
+        display: block;
+        background-color: $gray-750;
+        text-align: center;
+        padding: 8px;
+        transition: all 0.5s ease;
+        &.add {
+          color: $turquoise;
+        }
+        &.in-list {
+          color: $light-green;
+        }
+      }
+    }
+    p {
+      max-width: $item-width;
+      text-align: center;
+      color: $white;
+      opacity: .7;
+      span {
+        color: $gray-550;
+        opacity: .7;
+      }
+    }
+  }
+}

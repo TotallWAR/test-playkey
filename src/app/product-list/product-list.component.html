@@ -1,0 +1,21 @@
+<ul class="product-list d-flex flex-row flex-wrap justify-content-evently">
+  <li class="p-2"
+      [class.added]="isInWishList(product)"
+      *ngFor="let product of products"
+      (click)="addToWishList(product)">
+    <div>
+      <img
+        src={{product.cover}}>
+      <!--TODO добавить перевод-->
+      <span [class.add]="!isInWishList(product)"
+            [class.in-list]="isInWishList(product)"
+            translate
+      >
+      {{!isInWishList(product) ? 'add' : 'inList'}}
+      </span>
+    </div>
+    <p>{{product.name}}<br/>
+      <span>{{product.price ? product.price : 0}}</span>
+    </p>
+  </li>
+</ul>
